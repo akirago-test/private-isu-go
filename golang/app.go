@@ -74,6 +74,7 @@ func init() {
 	memcacheClient := memcache.New(memdAddr)
 	store = gsm.NewMemcacheStore(memcacheClient, "iscogram_", []byte("sendagaya"))
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	log.Println("test でーす")
 }
 
 func dbInitialize() {
