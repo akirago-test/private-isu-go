@@ -89,8 +89,6 @@ func dbInitialize() {
 	for _, sql := range sqls {
 		db.Exec(sql)
 	}
-	log.Fatalln("error でーす")
-
 }
 
 func tryLogin(accountName, password string) *User {
